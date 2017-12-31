@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FlexibleBottomNavigationView">
+        <attr name="badgeTextColor" format="color" />
+        <attr name="badgeBackgroundColor" format="color" />
+        <attr name="menu" />
+        <attr name="itemIconTint" />
+        <attr name="itemTextColor" />
+        <attr name="itemBackground" />
+        <attr name="elevation" />
+    </declare-styleable>
+</resources>

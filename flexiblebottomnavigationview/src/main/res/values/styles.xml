@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="FlexibleBottomNavigationStyle" parent="@style/Theme.AppCompat.Light">
+
+    </style>
+
+    <style name="Widget.FlexibleBottomNavigationStyle" parent="Widget.Design.BottomNavigationView" />
+
+</resources>
