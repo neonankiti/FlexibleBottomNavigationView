@@ -1,13 +1,11 @@
-package com.neonankiti.flexiblebottomnavigationview.android.support.design.utils
+package com.neonankiti.android.support.design.utils
 
 import android.annotation.SuppressLint
 import android.util.Log
 
-import com.neonankiti.flexiblebottomnavigationview.android.support.design.internal.FlexibleBottomNavigationItemView
-import com.neonankiti.flexiblebottomnavigationview.android.support.design.internal.FlexibleBottomNavigationMenuView
-import com.neonankiti.flexiblebottomnavigationview.android.support.design.widget.FlexibleBottomNavigationView
-
-import java.lang.reflect.Field
+import com.neonankiti.android.support.design.internal.FlexibleBottomNavigationItemView
+import com.neonankiti.android.support.design.internal.FlexibleBottomNavigationMenuView
+import com.neonankiti.android.support.design.widget.FlexibleBottomNavigationView
 
 object FlexibleBottomNavigationViewHelper {
 

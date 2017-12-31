@@ -1,7 +1,6 @@
-package com.neonankiti.flexiblebottomnavigationview.android.support.design.utils
+package com.neonankiti.android.support.design.utils
 
 import android.content.Context
-import android.content.res.TypedArray
 
 object ThemeUtils {
 

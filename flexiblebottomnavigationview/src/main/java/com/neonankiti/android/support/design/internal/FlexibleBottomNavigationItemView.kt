@@ -1,9 +1,8 @@
-package com.neonankiti.flexiblebottomnavigationview.android.support.design.internal
+package com.neonankiti.android.support.design.internal
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.ColorStateList
-import android.content.res.Resources
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.GradientDrawable
 import android.support.v4.content.ContextCompat

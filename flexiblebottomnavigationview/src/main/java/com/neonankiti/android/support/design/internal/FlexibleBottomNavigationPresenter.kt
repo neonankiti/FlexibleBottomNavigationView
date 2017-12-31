@@ -1,4 +1,4 @@
-package com.neonankiti.flexiblebottomnavigationview.android.support.design.internal
+package com.neonankiti.android.support.design.internal
 
 import android.annotation.SuppressLint
 import android.content.Context

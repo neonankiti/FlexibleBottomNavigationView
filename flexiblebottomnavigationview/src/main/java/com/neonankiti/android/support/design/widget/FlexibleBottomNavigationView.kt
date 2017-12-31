@@ -1,4 +1,4 @@
-package com.neonankiti.flexiblebottomnavigationview.android.support.design.widget
+package com.neonankiti.android.support.design.widget
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -29,9 +29,9 @@ import android.view.ViewGroup
 import android.widget.FrameLayout
 
 import com.neonankiti.flexiblebottomnavigationview.R
-import com.neonankiti.flexiblebottomnavigationview.android.support.design.internal.FlexibleBottomNavigationMenuView
-import com.neonankiti.flexiblebottomnavigationview.android.support.design.internal.FlexibleBottomNavigationPresenter
-import com.neonankiti.flexiblebottomnavigationview.android.support.design.utils.ThemeUtils
+import com.neonankiti.android.support.design.internal.FlexibleBottomNavigationMenuView
+import com.neonankiti.android.support.design.internal.FlexibleBottomNavigationPresenter
+import com.neonankiti.android.support.design.utils.ThemeUtils
 
 @SuppressLint("RestrictedApi")
 class FlexibleBottomNavigationView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0)

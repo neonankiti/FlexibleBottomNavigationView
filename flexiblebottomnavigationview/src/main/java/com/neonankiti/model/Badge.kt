@@ -1,4 +1,4 @@
-package com.neonankiti.flexiblebottomnavigationview.model
+package com.neonankiti.model
 
 import android.content.res.ColorStateList
 

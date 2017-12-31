@@ -1,9 +1,8 @@
-package com.neonankiti.flexiblebottomnavigationview.android.support.design.internal
+package com.neonankiti.android.support.design.internal
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.ColorStateList
-import android.content.res.Resources
 import android.support.design.internal.BottomNavigationMenu
 import android.support.design.internal.TextScale
 import android.support.transition.AutoTransition
@@ -16,14 +15,12 @@ import android.support.v7.view.menu.MenuBuilder
 import android.support.v7.view.menu.MenuItemImpl
 import android.support.v7.view.menu.MenuView
 import android.util.AttributeSet
-import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 
 import com.neonankiti.flexiblebottomnavigationview.R
-import com.neonankiti.flexiblebottomnavigationview.model.Badge
-import com.neonankiti.flexiblebottomnavigationview.model.NumberBadge
-import kotlinx.android.synthetic.main.flexible_bottom_navigation_item.view.*
+import com.neonankiti.model.Badge
+import com.neonankiti.model.NumberBadge
 
 @SuppressLint("RestrictedApi")
 class FlexibleBottomNavigationMenuView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null)
