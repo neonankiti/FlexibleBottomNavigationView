@@ -4,7 +4,7 @@ This is Custome BottomNavigationView
 
 ## Image
 
-<img src="https://github.com/neonankiti/FlexibleBottomNavigationView/blob/master/app/src/main/res/image/sceen_shot.gif" />
+<img src="https://github.com/neonankiti/FlexibleBottomNavigationView/blob/master/app/image/sceen_shot.gif" />
 
 
 ## What to solve
