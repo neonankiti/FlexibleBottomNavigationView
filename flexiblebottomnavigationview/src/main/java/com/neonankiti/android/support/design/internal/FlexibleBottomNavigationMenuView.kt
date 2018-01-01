@@ -23,7 +23,7 @@ import com.neonankiti.model.Badge
 import com.neonankiti.model.NumberBadge
 
 @SuppressLint("RestrictedApi")
-class FlexibleBottomNavigationMenuView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null)
+internal class FlexibleBottomNavigationMenuView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null)
     : ViewGroup(context, attrs), MenuView {
 
     private val mSet: TransitionSet

@@ -11,7 +11,7 @@ import android.support.v7.view.menu.MenuView
 import android.support.v7.view.menu.SubMenuBuilder
 import android.view.ViewGroup
 
-class FlexibleBottomNavigationPresenter : MenuPresenter {
+internal class FlexibleBottomNavigationPresenter : MenuPresenter {
     private var mMenu: MenuBuilder? = null
     private lateinit var mMenuView: FlexibleBottomNavigationMenuView
     private var mUpdateSuspended = false

@@ -4,7 +4,7 @@ package com.neonankiti.model
 import android.content.res.ColorStateList
 import android.view.View
 
-class NumberBadge(count: Int, textColor: ColorStateList, backgroundColor: Int) : Badge(count, textColor, backgroundColor) {
+internal class NumberBadge(count: Int, textColor: ColorStateList, backgroundColor: Int) : Badge(count, textColor, backgroundColor) {
 
     override val visibility: Int
         get() = if (count == 0) View.GONE else View.VISIBLE

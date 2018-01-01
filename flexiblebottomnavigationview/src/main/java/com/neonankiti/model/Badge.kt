@@ -3,9 +3,9 @@ package com.neonankiti.model
 import android.content.res.ColorStateList
 
 
-abstract class Badge constructor(internal var count: Int,
-                                 internal var textColor: ColorStateList,
-                                 internal var backgroundColor: Int) {
+internal abstract class Badge constructor(internal var count: Int,
+                                          internal var textColor: ColorStateList,
+                                          internal var backgroundColor: Int) {
 
     abstract val visibility: Int
     abstract val textSize: Int
