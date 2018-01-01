@@ -7,7 +7,7 @@ import com.neonankiti.android.support.design.internal.FlexibleBottomNavigationIt
 import com.neonankiti.android.support.design.internal.FlexibleBottomNavigationMenuView
 import com.neonankiti.android.support.design.widget.FlexibleBottomNavigationView
 
-object FlexibleBottomNavigationViewHelper {
+internal object FlexibleBottomNavigationViewHelper {
 
     @SuppressLint("RestrictedApi")
     fun disableShiftMode(view: FlexibleBottomNavigationView) {

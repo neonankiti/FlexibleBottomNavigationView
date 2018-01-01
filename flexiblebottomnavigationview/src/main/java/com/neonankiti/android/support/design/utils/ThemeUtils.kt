@@ -2,7 +2,7 @@ package com.neonankiti.android.support.design.utils
 
 import android.content.Context
 
-object ThemeUtils {
+internal object ThemeUtils {
 
     private val APPCOMPAT_CHECK_ATTRS = intArrayOf(android.support.v7.appcompat.R.attr.colorPrimary)
 

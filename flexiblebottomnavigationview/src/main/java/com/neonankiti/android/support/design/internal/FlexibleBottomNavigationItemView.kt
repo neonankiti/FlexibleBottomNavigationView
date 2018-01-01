@@ -20,12 +20,13 @@ import android.view.View
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
+import com.neonankiti.android.support.design.utils.FlexibleBottomNavigationViewHelper
 
 import com.neonankiti.flexiblebottomnavigationview.R
 
 @SuppressLint("RestrictedApi")
-class FlexibleBottomNavigationItemView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null,
-                                                                 defStyleAttr: Int = 0)
+internal class FlexibleBottomNavigationItemView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null,
+                                                                          defStyleAttr: Int = 0)
     : FrameLayout(context, attrs, defStyleAttr), MenuView.ItemView {
 
     private val mDefaultMargin: Int
