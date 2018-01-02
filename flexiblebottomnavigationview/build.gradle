@@ -3,6 +3,10 @@ apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+ext {
+    version_name = "0.1.1"
+}
+
 android {
     compileSdkVersion 26
 
@@ -12,7 +16,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
-        versionName "0.1.0"
+        versionName version_name
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -31,7 +35,7 @@ publish {
     userOrg = 'neonankiti'
     groupId = 'com.neonankiti'
     artifactId = 'flexiblebottomnavigationview'
-    publishVersion = '0.1.0'
+    publishVersion = version_name
     desc = 'custom bottom navigation'
     website = 'https://github.com/neonankiti/FlexibleBottomNavigationView'
 }
