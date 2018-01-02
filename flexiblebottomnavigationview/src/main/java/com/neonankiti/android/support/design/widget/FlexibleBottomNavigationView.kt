@@ -31,6 +31,7 @@ import android.widget.FrameLayout
 import com.neonankiti.flexiblebottomnavigationview.R
 import com.neonankiti.android.support.design.internal.FlexibleBottomNavigationMenuView
 import com.neonankiti.android.support.design.internal.FlexibleBottomNavigationPresenter
+import com.neonankiti.android.support.design.utils.FlexibleBottomNavigationViewHelper
 import com.neonankiti.android.support.design.utils.ThemeUtils
 
 @SuppressLint("RestrictedApi")
@@ -275,6 +276,12 @@ class FlexibleBottomNavigationView @JvmOverloads constructor(context: Context, a
     fun setItemBadgeCount(menuItemId: Int, count: Int) {
         mPresenter.setItemBadgeCount(menuItemId, count)
         mMenuView.updateMenuView()
+    }
+
+    fun enableShiftMode(enable: Boolean) {
+        if (!enable) {
+            FlexibleBottomNavigationViewHelper.disableShiftMode(this)
+        }
     }
 
     /**
