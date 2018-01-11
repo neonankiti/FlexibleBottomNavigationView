@@ -8,5 +8,6 @@
         <attr name="itemTextColor" />
         <attr name="itemBackground" />
         <attr name="elevation" />
+        <attr name="topDivider" format="boolean" />
     </declare-styleable>
 </resources>
