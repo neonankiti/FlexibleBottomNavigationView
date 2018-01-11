@@ -198,6 +198,8 @@ class FlexibleBottomNavigationView @JvmOverloads constructor(context: Context, a
                     R.styleable.FlexibleBottomNavigationView_elevation, 0).toFloat())
         }
 
+        enableShiftMode(a.getBoolean(R.styleable.FlexibleBottomNavigationView_shiftMode, true))
+
         val itemBackground = a.getResourceId(R.styleable.FlexibleBottomNavigationView_itemBackground, 0)
         mMenuView.itemBackgroundRes = itemBackground
 
