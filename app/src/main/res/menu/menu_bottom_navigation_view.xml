@@ -3,19 +3,19 @@
 
     <item
         android:id="@+id/nav1"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_backup_white_24dp"
         android:title="nav1" />
     <item
         android:id="@+id/nav2"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_backup_white_24dp"
         android:title="nav2" />
     <item
         android:id="@+id/nav3"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_backup_white_24dp"
         android:title="nav3" />
     <item
         android:id="@+id/nav4"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_backup_white_24dp"
         android:title="nav4" />
 
 </menu>
