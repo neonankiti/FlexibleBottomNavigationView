@@ -20,11 +20,11 @@ class MainActivity : AppCompatActivity() {
         // Add your badge with item resource id.
         bottomNavigationView.setItemBadgeCount(R.id.nav1, 50)
 
-        // When you change the text color of badge
-        bottomNavigationView.setItemBadgeTextColor(ContextCompat.getColorStateList(this, R.color.colorPrimary))
+        // When you change the text bottom_nav_item_color of badge
+        bottomNavigationView.setItemBadgeTextColor(ContextCompat.getColorStateList(this, android.R.color.white))
 
-        // When you change the background color of badge
-        bottomNavigationView.setItemBadgeBackgroundResource(android.R.color.holo_red_dark)
+        // When you change the background bottom_nav_item_color of badge
+        bottomNavigationView.setItemBadgeBackgroundResource(android.R.color.holo_orange_dark)
 
     }
 }
