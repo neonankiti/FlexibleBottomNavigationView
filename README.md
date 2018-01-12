@@ -1,6 +1,6 @@
 # FlexibleBottomNavigationView
 
-This is Custome BottomNavigationView
+This is a Custom BottomNavigationView supporting Badge Widget.
 
 ## Image
 
@@ -21,7 +21,7 @@ write as follow in your app module build.gradle
 
 ```build.gradle
 dependencies{
-    implementation 'com.neonankiti:flexiblebottomnavigationview:0.1.0'
+    implementation 'com.neonankiti:flexiblebottomnavigationview:0.1.2'
 }
 ```
 
@@ -53,6 +53,9 @@ Additionals are only bewlow.
 |:--|:--|:--|
 |badgeBackgroundColor|color|@color/colorAccent|
 |badgeTextColor|color|@android:color/white|
+|topDivider|boolean|true|
+|shiftMode|boolean|true|
+
 
 ```MainActivity.kt
 val bottomNavigationView = findViewById<FlexibleBottomNavigationView>(R.id.bottom_navigation_view)
