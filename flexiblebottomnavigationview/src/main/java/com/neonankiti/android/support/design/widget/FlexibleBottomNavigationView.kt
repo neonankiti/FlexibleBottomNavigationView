@@ -191,7 +191,7 @@ class FlexibleBottomNavigationView @JvmOverloads constructor(context: Context, a
         if (a.hasValue(R.styleable.FlexibleBottomNavigationView_badgeTextColor)) {
             mMenuView.setItemBadgeTextColor(a.getColorStateList(R.styleable.FlexibleBottomNavigationView_badgeTextColor))
         } else {
-            mMenuView.setItemBadgeTextColor(createDefaultColorStateList(android.R.attr.textColorSecondary)!!)
+            mMenuView.setItemBadgeTextColor(ContextCompat.getColorStateList(context, android.R.color.white))
         }
         if (a.hasValue(R.styleable.FlexibleBottomNavigationView_elevation)) {
             ViewCompat.setElevation(this, a.getDimensionPixelSize(
