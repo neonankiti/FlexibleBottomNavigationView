@@ -191,12 +191,14 @@ class FlexibleBottomNavigationView @JvmOverloads constructor(context: Context, a
         if (a.hasValue(R.styleable.FlexibleBottomNavigationView_badgeTextColor)) {
             mMenuView.setItemBadgeTextColor(a.getColorStateList(R.styleable.FlexibleBottomNavigationView_badgeTextColor))
         } else {
-            mMenuView.setItemBadgeTextColor(createDefaultColorStateList(android.R.attr.textColorSecondary)!!)
+            mMenuView.setItemBadgeTextColor(ContextCompat.getColorStateList(context, android.R.color.white))
         }
         if (a.hasValue(R.styleable.FlexibleBottomNavigationView_elevation)) {
             ViewCompat.setElevation(this, a.getDimensionPixelSize(
                     R.styleable.FlexibleBottomNavigationView_elevation, 0).toFloat())
         }
+
+        enableShiftMode(a.getBoolean(R.styleable.FlexibleBottomNavigationView_shiftMode, true))
 
         val itemBackground = a.getResourceId(R.styleable.FlexibleBottomNavigationView_itemBackground, 0)
         mMenuView.itemBackgroundRes = itemBackground
@@ -204,12 +206,13 @@ class FlexibleBottomNavigationView @JvmOverloads constructor(context: Context, a
         if (a.hasValue(R.styleable.FlexibleBottomNavigationView_menu)) {
             inflateMenu(a.getResourceId(R.styleable.FlexibleBottomNavigationView_menu, 0))
         }
-        a.recycle()
 
         addView(mMenuView, params)
-        if (Build.VERSION.SDK_INT < 21) {
+        if (a.getBoolean(R.styleable.FlexibleBottomNavigationView_topDivider, false)) {
             addCompatibilityTopDivider(context)
         }
+
+        a.recycle()
 
         mMenu.setCallback(object : MenuBuilder.Callback {
             override fun onMenuItemSelected(menu: MenuBuilder, item: MenuItem): Boolean {
