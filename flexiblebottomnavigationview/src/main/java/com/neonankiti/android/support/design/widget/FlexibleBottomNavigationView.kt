@@ -3,7 +3,6 @@ package com.neonankiti.android.support.design.widget
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.res.ColorStateList
-import android.os.Build
 import android.os.Bundle
 import android.os.Parcel
 import android.os.Parcelable
@@ -20,19 +19,13 @@ import android.support.v7.view.menu.MenuBuilder
 import android.support.v7.widget.TintTypedArray
 import android.util.AttributeSet
 import android.util.TypedValue
-import android.view.Gravity
-import android.view.Menu
-import android.view.MenuInflater
-import android.view.MenuItem
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.FrameLayout
-
-import com.neonankiti.flexiblebottomnavigationview.R
 import com.neonankiti.android.support.design.internal.FlexibleBottomNavigationMenuView
 import com.neonankiti.android.support.design.internal.FlexibleBottomNavigationPresenter
 import com.neonankiti.android.support.design.utils.FlexibleBottomNavigationViewHelper
 import com.neonankiti.android.support.design.utils.ThemeUtils
+import com.neonankiti.flexiblebottomnavigationview.R
 
 @SuppressLint("RestrictedApi")
 class FlexibleBottomNavigationView @JvmOverloads constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0)
@@ -357,10 +350,13 @@ class FlexibleBottomNavigationView @JvmOverloads constructor(context: Context, a
 
     override fun onSaveInstanceState(): Parcelable? {
         val superState = super.onSaveInstanceState()
-        val savedState = SavedState(superState)
-        savedState.menuPresenterState = Bundle()
-        mMenu.savePresenterStates(savedState.menuPresenterState)
-        return savedState
+        superState?.let {
+            val savedState = SavedState(it)
+            savedState.menuPresenterState = Bundle()
+            mMenu.savePresenterStates(savedState.menuPresenterState)
+            return it
+        }
+        return superState
     }
 
     override fun onRestoreInstanceState(state: Parcelable) {
